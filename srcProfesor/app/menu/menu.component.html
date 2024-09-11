@@ -1,0 +1,36 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item button routerLink="/perfil">
+        <ion-icon slot="start" name="person"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/generar-qr">
+        <ion-icon slot="start" name="qr-code"></ion-icon>
+        <ion-label>Generar Código QR</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/gestion-clases">
+        <ion-icon slot="start" name="document-text"></ion-icon>
+        <ion-label>Gestion de clases</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/justificacion-inasistencias">
+        <ion-icon slot="start" name="document-text"></ion-icon>
+        <ion-label>Justificación de Inasistencias</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/configuracion">
+        <ion-icon slot="start" name="settings"></ion-icon>
+        <ion-label>Configuración</ion-label>
+      </ion-item>
+      <ion-item button (click)="onLogout()"> 
+        <ion-icon slot="start" name="log-out"></ion-icon>
+        <ion-label>Cerrar sesión</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>

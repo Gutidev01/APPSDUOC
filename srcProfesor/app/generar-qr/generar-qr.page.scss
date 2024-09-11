@@ -1,0 +1,25 @@
+/* Puedes añadir este CSS en el archivo .scss correspondiente a la página */
+ion-content {
+    --background: #ffffff;
+    --color: #3880ff;
+    --keyboard-offset: 0px;
+    --offset-bottom: 0px;
+    --offset-top: 0px;
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    --padding-top: 0px;
+}
+.qr-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #3880ff;
+  }
+  
+  .qr-image {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    color: black;
+  }
+  

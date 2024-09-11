@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Generar Código QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Aquí puedes generar tu código QR.</p>
+
+  
+  <ion-button expand="full" (click)="generateQRCode()">
+    Generar QR
+  </ion-button>
+
+ 
+  <div class="qr-icon-container" *ngIf="qrCodeUrl">
+    <img [src]="qrCodeUrl" alt="Código QR" class="qr-image" />
+  </div>
+</ion-content>
+
+
+<app-menu></app-menu>
+
+
+<ion-router-outlet id="main-content"></ion-router-outlet>
