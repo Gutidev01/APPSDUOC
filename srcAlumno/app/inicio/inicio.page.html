@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="main-content">
+  <div class="carousel-container">
+    <div class="carousel">
+      <img [src]="images[currentIndex]" class="carousel-image" />
+      <div class="carousel-buttons">
+        <ion-button fill="clear" class="arrow-button left" (click)="prevImage()">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" class="arrow-button right" (click)="nextImage()">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div class="info-text">
+      <p>{{ infoTexts[currentIndex] }}</p> 
+    </div>
+  </div>
+</ion-content>

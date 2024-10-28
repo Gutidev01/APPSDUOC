@@ -1,0 +1,94 @@
+ion-content {
+  --padding-bottom: 40px;
+  --background: #ffffff; 
+}
+
+ion-label {
+  color: #000;
+  text-align: right;
+
+}
+  
+  .login-grid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ion-col {
+    padding: 20px;
+  }
+  
+  .first-time {
+    text-align: center;
+    margin-bottom: 20px;  
+  }
+  
+  .first-time a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  ion-item {
+    margin-bottom: 25px; 
+
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;  
+    margin-bottom: 40px;  
+    color: #007BFF;
+    font-size: 14px;
+    text-decoration: none;
+
+  }
+  
+
+.login-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  box-shadow: none;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-button {
+  --background: none;
+  --box-shadow: none;
+  --border-radius: 8px;
+  --padding: 0;
+}
+
+
+  
+  .first-time, .forgot-password {
+    color: #000; 
+}
+
+
+ion-item {
+  --background: transparent;
+  --border-radius: 8px;
+  --inner-padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 25px;
+}
+
+ion-input {
+  --background: #fff; 
+  --color: #000; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 10px; 
+  width: 100%;
+  box-sizing: border-box;
+}

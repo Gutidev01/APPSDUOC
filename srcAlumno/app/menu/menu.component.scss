@@ -1,0 +1,79 @@
+/* Menú lateral */
+ion-menu {
+  --background: #ffffff; 
+  width: 280px; 
+}
+
+@media (max-width: 768px) {
+  ion-menu {
+    width: 240px; /* Reduce el ancho en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  ion-menu {
+    width: 220px; /* Ajuste para pantallas pequeñas */
+  }
+}
+
+/* Encabezado */
+ion-header {
+  --background: #ffffff; 
+  color: #000000; 
+}
+
+ion-toolbar {
+  --background: transparent;
+  --color: #000000; 
+}
+
+
+ion-content {
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  --background: #ffffff; 
+  padding: 10px 0;
+}
+
+
+ion-list {
+  background-color: #ffffff !important; 
+}
+
+ion-item {
+  --background: #ffffff !important; 
+  --border-radius: 8px;
+  --padding-start: 10px;
+  color: #000000; 
+  font-size: 16px;
+  --inner-padding-end: 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+ion-item:hover {
+  background-color: #f0f0f0; 
+}
+
+/* Íconos */
+ion-icon {
+  font-size: 22px; /* Aumenta el tamaño del ícono */
+  color: #007bff; /* Asegúrate de que el color esté bien aplicado */
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+ion-label {
+  color: #000000; /* Texto de los labels en negro */
+}
+
+/* Efecto de clic en los items del menú */
+ion-item[button]:active {
+  background-color: #e0e0e0; /* Color al hacer clic en un item */
+}
+
+ion-item[button] {
+  transition: background-color 0.3s ease;
+}
